@@ -1,0 +1,7 @@
+(fp_lib_table
+  (lib (name "purple-owl")(type "KiCad")(uri "/Users/spinto/Documents/KiCad/6.0/projects/purple-owl/pcb/purple-owl.pretty")(options "")(descr ""))
+  (lib (name "ProMicro")(type "KiCad")(uri "/Users/spinto/Documents/KiCad/6.0/projects/ProMicroKiCad/promicro.pretty")(options "")(descr ""))
+  (lib (name "keebio")(type "KiCad")(uri "/Users/spinto/Documents/KiCad/6.0/footprints/Keebio-Parts.pretty")(options "")(descr ""))
+  (lib (name "acheron")(type "KiCad")(uri "/Users/spinto/Documents/KiCad/6.0/footprints/acheron_MXH.pretty")(options "")(descr ""))
+  (lib (name "aio3_mx")(type "KiCad")(uri "/Users/spinto/Documents/KiCad/6.0/footprints/aio3_MX_Only.pretty")(options "")(descr ""))
+)

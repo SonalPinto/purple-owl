@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name "purple-owl")(type "KiCad")(uri "/Users/spinto/Documents/KiCad/6.0/projects/purple-owl/pcb/purple-owl.kicad_sym")(options "")(descr ""))
+  (lib (name "ProMicro")(type "KiCad")(uri "/Users/spinto/Documents/KiCad/6.0/projects/ProMicroKiCad/promicro_library/promicro.kicad_sym")(options "")(descr ""))
+  (lib (name "aio3_mx")(type "KiCad")(uri "/Users/spinto/Documents/KiCad/6.0/symbols/aio3_mx_symbols/MX_Alps_Hybrid.kicad_sym")(options "")(descr ""))
+)
