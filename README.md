@@ -13,6 +13,7 @@ Link to the base layout at [Keyboard Layout Editor](http://www.keyboard-layout-e
 I have a gorgeous looking ortho keycap set, MT3 Cyber lying around and it was a shame to not have adorned on a board. I also loved the feel of a shift and ctrl under my left thumb like my setup on the Iris v6, a split column-staggered layout. But, I missed my arrows keys and outer column symbols (which were on a layer). Once, I saw the Zlant - I simply knew I had to make the Purple Owl. Plus, it's been a over a year since I designed a PCB, or worked on a [hobby electronics project](https://github.com/SonalPinto/krz-arduboy2) and wanted to get into something before I forget how to DIY.
 
 ## PCB
+![wip](https://img.shields.io/badge/Work-In%20Progress-orange?style=for-the-badge&logo=github)
 
 ### Externals
 - Acheron MX footprints ([link](https://github.com/AcheronProject/acheron_MXH.pretty.git)) for Kailh hotswap sockets.
