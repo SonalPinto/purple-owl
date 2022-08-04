@@ -10685,7 +10685,7 @@
   (gr_text "Purple Owl v0.1" (at 219.71 158.75) (layer "F.SilkS") (tstamp 8bebf8ca-0de0-498d-bc6e-dbc3b78a0b7b)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
-  (gr_text "This is a prototype of the Purple Owl layout powered by a Waveshare RP2040 Zero.\nEventually, the active electronins will go on the keyboard PCB itself.\n\nThe uC board is tilted 26' which is approximately the slant of the columns.\n\nThe 90' arcs softening the corners are 50mil radius." (at 302.895 213.995) (layer "Dwgs.User") (tstamp 0d376063-d9b4-49c6-af29-4f9a37df8d21)
+  (gr_text "This is a prototype of the Purple Owl layout powered by a Waveshare RP2040 Zero.\nEventually, the active electronics will go on the keyboard PCB itself.\n\nThe uC board is tilted 26' which is approximately the slant of the columns.\n\nThe 90' arcs softening the corners are 50mil radius." (at 302.895 213.995) (layer "Dwgs.User") (tstamp 0d376063-d9b4-49c6-af29-4f9a37df8d21)
     (effects (font (size 1.5 1.5) (thickness 0.15)) (justify left))
   )
   (gr_text "Notes" (at 306.705 203.835) (layer "Dwgs.User") (tstamp 90641ac2-7cd1-4720-bcf9-13d5b75125f5)
