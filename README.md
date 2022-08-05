@@ -1,7 +1,7 @@
 # Purple Owl
 
 <p align="center" width="100%">
-    <img width="50%" src="assets/purple-owl-logo.png">
+    <img width="25%" src="assets/purple-owl-logo.png">
 </p>
 
 The Purple Owl is a uniform row staggered 60% keyboard designed around ortholinear 1u keycaps and hotswap sockets.
@@ -9,14 +9,18 @@ The Purple Owl is a uniform row staggered 60% keyboard designed around ortholine
 ## Layout
 The Purple Owl was inspired off the works of Ziptyze with their Zlant (4x12) and ZlantXL (5x12). It is almost like a staggered 5-row Preonic but with more columns a narrow bottom row to offer the visual aesthetic of four dominant rows like a Plank. Each row has a 0.25u stagger unlike a traditional row-stagger. There are 14 columns to accommodate the outer symbols (`-=[]\`). The right shift can be traded in for an arrow cluster. The ctrl, shift and other mods are designed to be under the thumbs with a symmetric bottom row that has a 2u surrounded by two 1u on each side. The board runs on [KMK](http://kmkfw.io/), so the keys can be freely mapped.
 
-![purple-owl-kle](assets/purple-owl-kle.png)
+<p align="center" width="100%">
+    <img width="75%" src="assets/purple-owl-kle.png">
+</p>
 
 Link to the base layout at [Keyboard Layout Editor](http://www.keyboard-layout-editor.com/#/gists/7c51d0df5eb78da5dd614ee6019f13bc). KLE Raw is also available [here](purple-owl-kle.txt)
 
 ## Electronics
 Instead of a traditional diode matrix, the Purple Owl implements a **scan chain** to poll the state of its switches using only 3 logic pins. This opens the door to support a wide variety of off-the-shelf microcontrollers including the Pro Micro layout variants popular in the mechanical keyboard community. KMK supports a scan chain scanner by default. So, any CircuitPython compatible board with the pinouts shown below should snap into Purple Owl. There is a solder jumper to select between two popular layouts - the Pro Micro variant and the Seeed XIAO variant. The Purple Owl design needs two power pins (3V3 and GND) and three logic pins (CLK, DATA, LATCH).
 
-![pinout](assets/pinout.png)
+<p align="center" width="100%">
+    <img width="75%" src="assets/pinout.jpg">
+</p>
 
 > While, I currently have a bunch of RP2040 boards in various layouts, I eventually might test out KMK BLE wireless with some CircuitPython compatible nrf52840 board like the nice!nano, Seeed nrf52840 or Adafruit QTPy Bluefruit (doesn't exist yet?). Anything with a JST connector for the battery.
 
@@ -33,17 +37,23 @@ To get a feel for the layout I prototyped a board that runs off a RP2040 microco
 
 I referred to the "recommended minimums" on [Acheron Setup](http://acheronproject.com/acheron_setup/acheron_setup/) for board rules which are more constrained for some fields that the default JLCPCB setup. Laying out the switches is a cakewalk once you set the grid to 19.05mm (1u or 0.75in). For the stagger, set the grid to 4.7625mm (0.25u or 19.05/4mm). The controller is tilted by 26' which is along the ~~z~~slant of the columns.
 
-![purple-owl-prototype](assets/purple-owl-prototype.png)
+<p align="center" width="100%">
+    <img src="assets/purple-owl-prototype.png">
+</p>
 
 I checked for clearance pretty early on as soon as I had the swtiches and controller laid out to make sure the slightly tilted controller and USB cable seemed ok on the right side. I printed half(~ish) the layout flipped on paper to scale.
 
-![clearance-check](assets/prototype_clearance_check.jpg)
+<p align="center" width="100%">
+    <img width="50%" src="assets/prototype_clearance_check.jpg">
+</p>
 
 For assembly, I wanted to trial JLCPCB's assembly service - especially for hotswap sockets. While, I could simply solder the sockets myself, I was curious about JLCPCB's work. And, if it did work, then building the proper Purple Owl would be fairly turnkey.
 
 The footprint for the JLCPCB [part](https://jlcpcb.com/partdetail/Kailh-CPG151101S11/C2803348) for the Kailh hotswap socket is centered around the socket itself. But, the switch footprint on the PCB is centered around the stem hole. So, I wrote a [small python snippet](pcb/tools/fix_pos.py) to fix the socket position and rotation in the POS assembly file. Below, you can see how it looks before (right) and after (left) the fix on the JLCPCB assembly preview.
 
-![jlcpcb_fix_pos](assets/jlcpcb_fix_pos.png)
+<p align="center" width="100%">
+    <img width="35%" src="assets/jlcpcb_fix_pos.png">
+</p>
 
 The cost for the PCB fabrication and assembly came up to $85 for 5 boards assembled. The 305 hotswap sockets (61 per board) going at 78 cents a piece for a total of about $24. In hindsight, I should have just assembled 2 boards considering this was a prototype, but my excitement got the better of me.
 
