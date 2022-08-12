@@ -1,4 +1,4 @@
-20912397819296139
+20917378813870585
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -88375,6 +88375,13 @@ Adafrut QTPy with Raspberry Pi RP2040
 11
 11
 purple-owl
+ComboJumper
+
+
+0
+3
+3
+purple-owl
 KB2040
 An Arduino Pro Micro-shaped board for Keebs with RP2040 from Adafruit
 
@@ -88388,6 +88395,20 @@ An Arduino Pro Micro-shaped board for Keebs with RP2040 from Adafruit
 0
 11
 11
+purple-owl
+SolderJumper3
+SMD Solder 3-pad Jumper, 1x1.5mm rounded Pads, 0.3mm gap, open, labeled with numbers
+solder jumper open
+0
+4
+3
+purple-owl
+WS2812B
+https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf
+LED RGB NeoPixel
+0
+4
+4
 purple-owl
 Waveshare_RP2040_Zero
 RP2040-Zero, A Low-Cost, High-Performance Pico-Like MCU Board Based On Raspberry Pi Microcontroller RP2040

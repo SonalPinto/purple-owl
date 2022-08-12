@@ -24,6 +24,9 @@ Instead of a traditional diode matrix, the Purple Owl implements a **scan chain*
 
 > While, I currently have a bunch of RP2040 boards in various layouts, I eventually might test out KMK BLE wireless with some CircuitPython compatible nrf52840 board like the nice!nano, Seeed nrf52840 or Adafruit QTPy Bluefruit (doesn't exist yet?). Anything with a JST connector for the battery.
 
+## News
+- The prototype appeared on KBD.news! [Link](https://kbd.news/Purple-Owl-1581.html)
+
 ## PCB
 ![wip](https://img.shields.io/badge/Work-In%20Progress-orange?style=for-the-badge&logo=github)
 

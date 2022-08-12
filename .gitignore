@@ -1,3 +1,4 @@
 .DS_Store
 purple-owl-backups
 *.bak
+*auto_saved_files*
