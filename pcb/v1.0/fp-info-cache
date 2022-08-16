@@ -1,4 +1,4 @@
-20917378813870585
+20920702095722080
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -88382,6 +88382,13 @@ ComboJumper
 3
 3
 purple-owl
+Jumper3
+
+
+0
+3
+3
+purple-owl
 KB2040
 An Arduino Pro Micro-shaped board for Keebs with RP2040 from Adafruit
 
@@ -88430,3 +88437,10 @@ owl
 0
 0
 0
+purple-owl
+purple_owl_uC
+Adafrut QTPy with Raspberry Pi RP2040
+
+0
+11
+11

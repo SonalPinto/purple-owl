@@ -24,11 +24,20 @@ Instead of a traditional diode matrix, the Purple Owl implements a **scan chain*
 
 > While, I currently have a bunch of RP2040 boards in various layouts, I eventually might test out KMK BLE wireless with some CircuitPython compatible nrf52840 board like the nice!nano, Seeed nrf52840 or Adafruit QTPy Bluefruit (doesn't exist yet?). Anything with a JST connector for the battery.
 
+## Seeed XIAO Mechanical Keyboard Contest
+I came across an article for this [contest](https://www.seeedstudio.com/seeed-fusion-diy-xiao-mechanical-keyboard-contest.html) on [KBD.news](https://kbd.news/). The Purple Owl was designed to be powered by a Seeed XIAO RP2040 (or any CircuitPython compatible Seeed XIAO for that matter) and will be my entry in the contest! Seeed is sponsoring two fully assembled PCBs - and that is an opportunity I simply couldn't pass on.
+
+<p align="center" width="75%">
+    <img src="assets/purple-owl-1p0-3D-top.png">
+</p>
+
+The tiny size of the Seeed XIAO RP2040 will be perfect to highlight the GPIO-efficient scan-chain design. Aside from the 61 switches, the Seeed XIAO RP2040 will drive 16 underglow LEDs which will look stunning in a laser cut case.
+
 ## News
 - The prototype appeared on KBD.news! [Link](https://kbd.news/Purple-Owl-1581.html)
 
 ## PCB
-![wip](https://img.shields.io/badge/Work-In%20Progress-orange?style=for-the-badge&logo=github)
+![done](https://img.shields.io/badge/Work-Complete-green?style=for-the-badge&logo=github)
 
 ### Externals
 - Acheron MX footprints ([link](https://github.com/AcheronProject/acheron_MXH.pretty.git)) for Kailh hotswap sockets.
@@ -78,10 +87,25 @@ And now, there was a way.
 
 > Firmware Note: Looks like KMK has a scanner for shift registers ([see](https://github.com/KMKfw/kmk_firmware/blob/master/kmk/scanners/keypad.py)) that wraps CircuitPython's `keypad.ShiftRegisterKeys()`. Great!
 
+### Production v1.0
+The design uses 8 74HC165 (TSSOP-16 package) to form the scan chain. 7 of these poll the top 4 rows across 14 columns and the last one polls the bottom row. I've also added 16 underglow LEDs (WS2812B-V5). Compared to the prototype, the design now has a clean board edge tightly fitting the switches, since the uC now goes underneath. The uC is socketed to the board with through-hole headers. Out of the 14 pins of the Seeed XIAO RP2040, 11 are connected.
+
+<p align="center" width="100%">
+    <img src="assets/purple-owl-1p0-pcb.png">
+</p>
+
+There are jumpers to select the 3V3 source depending on the attached uC. And jumpers to select the power source (3.3V or 5V) for the LEDs. Though off-spec, The LEDs work fine on 3.3V, albeit slightly less bright than if powered by 5V. There wasn't enough space (while staying close to the board edge) to allow a through hole header for the 5V, so the design offers a jumper/through-hole that needs to be wired between the board and the jumper site if 5V is desired.
+
+- JP1: Join `1-2` or `2-3` depending on where the 3V3 pin on the uC is. For the Seeed XIAO RP2040 variants short the `1-2`. And, for Pro Micro variants, short `2-3`.
+- JP2: Join `1-2` to select the 3.3V source selected by JP1, or connect the 5V to `3` from the uC over a wire and join `2-3`.
+
+For assembly, Seeed is sponsoring two fully assembled boards 🎉
+
 ## Credits
 - Layout inspired by Ziptyze's [Zlant](https://1upkeyboards.com/shop/keyboard-kits/diy-40-kits/zlant-40-acrylic-keyboard-kit/) and [ZlantXL](https://1upkeyboards.com/shop/keyboard-kits/diy-40-kits/zlantxl-50-mechanical-keyboard-kit/).
 - Electronics inspired by Zhihui's [HanWen](https://github.com/peng-zhihui/HelloWord-Keyboard) and Tzarc's [Ghoul](https://github.com/tzarc/ghoul) which use shift registers to scan the matrix.
 - Dovenyi and [Keyboard Builder's Digest](https://kbd.news/).
+- Seeed DIY XIAO Mechanical Keyboard Contest, [Link](https://www.seeedstudio.com/seeed-fusion-diy-xiao-mechanical-keyboard-contest.html).
 
 ## Why
 I have a gorgeous looking ortho keycap set, MT3 Cyber lying around and it was a shame to not have adorned on a board. I also loved the feel of a shift and ctrl under my left thumb like my setup on the Iris v6, a split column-staggered layout. But, I missed my arrows keys and outer column symbols (which were on a layer). Once, I saw the Zlant - I simply knew I had to make the Purple Owl. Plus, it's been a over a year since I designed a PCB, or worked on a [hobby electronics project](https://github.com/SonalPinto/krz-arduboy2) and wanted to get into something before I forget how to DIY.

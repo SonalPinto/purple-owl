@@ -48,8 +48,8 @@
     )
   )
   (model "/Users/spinto/Documents/KiCad/6.0/3dmodels/QTPY-RP2040.step"
-    (offset (xyz -1.27 -17.9705 0))
+    (offset (xyz 16.5 -17.9705 4.5))
     (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
+    (rotate (xyz 0 180 0))
   )
 )
