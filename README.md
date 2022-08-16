@@ -19,7 +19,7 @@ Link to the base layout at [Keyboard Layout Editor](http://www.keyboard-layout-e
 Instead of a traditional diode matrix, the Purple Owl implements a **scan chain** to poll the state of its switches using only 3 logic pins. This opens the door to support a wide variety of off-the-shelf microcontrollers including the Pro Micro layout variants popular in the mechanical keyboard community. KMK supports a scan chain scanner by default. So, any CircuitPython compatible board with the pinouts shown below should snap into Purple Owl. There is a solder jumper to select between two popular layouts - the Pro Micro variant and the Seeed XIAO variant. The Purple Owl design needs two power pins (3V3 and GND) and three logic pins (CLK, DATA, LATCH).
 
 <p align="center" width="100%">
-    <img width="75%" src="assets/pinout.jpg">
+    <img width="75%" src="assets/pinout.jpeg">
 </p>
 
 > While, I currently have a bunch of RP2040 boards in various layouts, I eventually might test out KMK BLE wireless with some CircuitPython compatible nrf52840 board like the nice!nano, Seeed nrf52840 or Adafruit QTPy Bluefruit (doesn't exist yet?). Anything with a JST connector for the battery.
