@@ -22,10 +22,10 @@ Instead of a traditional diode matrix, the Purple Owl implements a **scan chain*
     <img width="75%" src="assets/pinout.jpeg">
 </p>
 
-> While, I currently have a bunch of RP2040 boards in various layouts, I eventually might test out KMK BLE wireless with some CircuitPython compatible nrf52840 board like the nice!nano, Seeed nrf52840 or Adafruit QTPy Bluefruit (doesn't exist yet?). Anything with a JST connector for the battery.
+> While, I currently have a bunch of RP2040 boards in various layouts, I eventually might test out KMK BLE wireless with some CircuitPython compatible nrf52840 board like the nice!nano, [Seeed nrf52840](https://www.seeedstudio.com/Seeed-XIAO-BLE-Sense-nRF52840-p-5253.html) or Adafruit QTPy Bluefruit (doesn't exist yet?). Anything with a JST connector for the battery.
 
 ## Seeed XIAO Mechanical Keyboard Contest
-I came across an article for this [contest](https://www.seeedstudio.com/seeed-fusion-diy-xiao-mechanical-keyboard-contest.html) on [KBD.news](https://kbd.news/). The Purple Owl was designed to be powered by a Seeed XIAO RP2040 (or any CircuitPython compatible Seeed XIAO for that matter) and will be my entry in the contest! Seeed is sponsoring two fully assembled PCBs - and that is an opportunity I simply couldn't pass on.
+I came across an article for this [contest](https://www.seeedstudio.com/seeed-fusion-diy-xiao-mechanical-keyboard-contest.html) on [KBD.news](https://kbd.news/). The Purple Owl was designed to be powered by a [Seeed XIAO RP2040](https://www.seeedstudio.com/XIAO-RP2040-v1-0-p-5026.html) (or any CircuitPython compatible Seeed XIAO for that matter) and will be my entry in the contest! Seeed is sponsoring two fully [assembled PCBs](https://www.seeedstudio.com/pcb-assembly.html) - and that is an opportunity I simply couldn't pass on.
 
 <p align="center" width="75%">
     <img src="assets/purple-owl-1p0-3D-top.png">
