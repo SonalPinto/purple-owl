@@ -101,6 +101,18 @@ There are jumpers to select the 3V3 source depending on the attached uC. And jum
 
 For assembly, Seeed is sponsoring two fully assembled boards 🎉
 
+## Firmware
+
+This project was my first experience with CircuitPython, let alone KMK. I am stunned how wasy it was to work with. Never did I think it would take just few lines of python to establish a fully functional keyboard with layers and underglow LEDs.
+
+There are bringup scripts for the both PCB variants which test the PCB and demonstrate interfacing with the keyboard switches using native CircuitPython.
+- [v0.1 bringup](firmware/v0.1/bringup.py) - diode matrix.
+- [v1.0 bringup](firmware/v1.0/bringup.py) - scan chain. Using digitalio, it took about 1ms to scan 61 switches. 
+
+The [setup](firmware/v0.1/main.py) for the prototype v0.1 diode matrix was fairly straightforward with KMK. I included three basic layers to start with (I really need the tilde/grave in my line of work). The physical layout of the switches were mapped to the layout with the `coord_mapping` setup.
+
+The [build](firmware/v1.0/main.py) for the v1.0 PCB inherited the same layers. The firmware switched the `scanner` to the `ShiftRegisterKeys()` and updated the `coord_mapping` to the physical layout of the scan chain. KMK offeres a neat `RGB` extension to support the underglow LEDs. The underglow RGB controls are added on a layer. Looking at the sheer simplicity of the [RGB extension](https://github.com/KMKfw/kmk_firmware/blob/master/kmk/extensions/rgb.py) I might consider writing a fancy underglow mode or two. Since, this was a *proper* build, the [`boot.py`](firmware/v1.0/boot.py) was updated with a "dev mode" which hides CircuitPython enumerations (serial, midi and storage) except for the USB HID keyboard.
+
 ## Credits
 - Layout inspired by Ziptyze's [Zlant](https://1upkeyboards.com/shop/keyboard-kits/diy-40-kits/zlant-40-acrylic-keyboard-kit/) and [ZlantXL](https://1upkeyboards.com/shop/keyboard-kits/diy-40-kits/zlantxl-50-mechanical-keyboard-kit/).
 - Electronics inspired by Zhihui's [HanWen](https://github.com/peng-zhihui/HelloWord-Keyboard) and Tzarc's [Ghoul](https://github.com/tzarc/ghoul) which use shift registers to scan the matrix.
