@@ -36,6 +36,18 @@ The tiny size of the Seeed XIAO RP2040 will be perfect to highlight the GPIO-eff
 ## News
 - The prototype appeared on KBD.news! [Link](https://kbd.news/Purple-Owl-1581.html)
 
+## Gallery
+
+<p align="center" width="100%">
+    <img src="assets/photos/dark0.jpg">
+</p>
+<p align="center" width="100%">
+    <img src="assets/photos/dark1.jpg">
+</p>
+<p align="center" width="100%">
+    <img src="assets/photos/dark2.jpg">
+</p>
+
 ## PCB
 ![done](https://img.shields.io/badge/Work-Complete-green?style=for-the-badge&logo=github)
 
@@ -100,6 +112,10 @@ There are jumpers to select the 3V3 source depending on the attached uC. And jum
 - JP2: Join `1-2` to select the 3.3V source selected by JP1, or connect the 5V to `3` from the uC over a wire and join `2-3`.
 
 For assembly, Seeed is sponsoring two fully assembled boards 🎉
+
+<p align="center" width="100%">
+    <img width="50%" src="assets/photos/pcb_mounting.jpg">
+</p>
 
 ## Firmware
 
