@@ -37,7 +37,12 @@ The tiny size of the Seeed XIAO RP2040 will be perfect to highlight the GPIO-eff
 - The prototype appeared on KBD.news! [Link](https://kbd.news/Purple-Owl-1581.html)
 
 ## Gallery
-
+<p align="center" width="100%">
+    <img src="assets/photos/unlit0.jpg">
+</p>
+<p align="center" width="100%">
+    <img src="assets/photos/unlit1.jpg">
+</p>
 <p align="center" width="100%">
     <img src="assets/photos/dark0.jpg">
 </p>
@@ -138,6 +143,11 @@ The [build](firmware/v1.0/main.py) for the v1.0 PCB inherited the same layers. T
 - Electronics inspired by Zhihui's [HanWen](https://github.com/peng-zhihui/HelloWord-Keyboard) and Tzarc's [Ghoul](https://github.com/tzarc/ghoul) which use shift registers to scan the matrix.
 - Dovenyi and [Keyboard Builder's Digest](https://kbd.news/).
 - Seeed DIY XIAO Mechanical Keyboard Contest, [Link](https://www.seeedstudio.com/seeed-fusion-diy-xiao-mechanical-keyboard-contest.html).
+- Photography by Wife 😘.
+
+<p align="center" width="100%">
+    <img src="assets/photos/credits.jpg">
+</p>
 
 ## Why
 I have a gorgeous looking ortho keycap set, MT3 Cyber lying around and it was a shame to not have adorned on a board. I also loved the feel of a shift and ctrl under my left thumb like my setup on the Iris v6, a split column-staggered layout. But, I missed my arrows keys and outer column symbols (which were on a layer). Once, I saw the Zlant - I simply knew I had to make the Purple Owl. Plus, it's been a over a year since I designed a PCB, or worked on a [hobby electronics project](https://github.com/SonalPinto/krz-arduboy2) and wanted to get into something before I forget how to DIY.
