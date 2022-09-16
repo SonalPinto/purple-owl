@@ -6,6 +6,10 @@
 
 The Purple Owl is a uniform row staggered 60% keyboard designed around ortholinear 1u keycaps and hotswap sockets.
 
+<p align="center" width="100%">
+    <img src="assets/photos/day1.jpg">
+</p>
+
 ## Layout
 The Purple Owl was inspired off the works of Ziptyze with their Zlant (4x12) and ZlantXL (5x12). It is almost like a staggered 5-row Preonic but with more columns a narrow bottom row to offer the visual aesthetic of four dominant rows like a Plank. Each row has a 0.25u stagger unlike a traditional row-stagger. There are 14 columns to accommodate the outer symbols (`-=[]\`). The right shift can be traded in for an arrow cluster. The ctrl, shift and other mods are designed to be under the thumbs with a symmetric bottom row that has a 2u surrounded by two 1u on each side. The board runs on [KMK](http://kmkfw.io/), so the keys can be freely mapped.
 
@@ -37,6 +41,15 @@ The tiny size of the Seeed XIAO RP2040 will be perfect to highlight the GPIO-eff
 - The prototype appeared on KBD.news! [Link](https://kbd.news/Purple-Owl-1581.html)
 
 ## Gallery
+<p align="center" width="100%">
+    <img src="assets/photos/day0.jpg">
+</p>
+<p align="center" width="100%">
+    <img src="assets/photos/day2.jpg">
+</p>
+<p align="center" width="100%">
+    <img src="assets/photos/day3.jpg">
+</p>
 <p align="center" width="100%">
     <img src="assets/photos/unlit0.jpg">
 </p>
