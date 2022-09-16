@@ -51,12 +51,6 @@ The tiny size of the Seeed XIAO RP2040 will be perfect to highlight the GPIO-eff
     <img src="assets/photos/day2.jpg">
 </p>
 <p align="center" width="100%">
-    <img src="assets/photos/dark1.jpg">
-</p>
-<p align="center" width="100%">
-    <img src="assets/photos/day3.jpg">
-</p>
-<p align="center" width="100%">
     <img src="assets/photos/dark2.jpg">
 </p>
 <p align="center" width="100%">
