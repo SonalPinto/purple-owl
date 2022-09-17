@@ -110,7 +110,14 @@ And now, there was a way.
 > Firmware Note: Looks like KMK has a scanner for shift registers ([see](https://github.com/KMKfw/kmk_firmware/blob/master/kmk/scanners/keypad.py)) that wraps CircuitPython's `keypad.ShiftRegisterKeys()`. Great!
 
 ### Production v1.0
-The design uses 8 74HC165 (TSSOP-16 package) to form the scan chain. 7 of these poll the top 4 rows across 14 columns and the last one polls the bottom row. I've also added 16 underglow LEDs (WS2812B-V5). Compared to the prototype, the design now has a clean board edge tightly fitting the switches, since the uC now goes underneath. The uC is socketed to the board with through-hole headers. Out of the 14 pins of the Seeed XIAO RP2040, 11 are connected.
+The design uses 8 74HC165 (TSSOP-16 package) to form the scan chain. 7 of these poll the top 4 rows across 14 columns and the last one polls the bottom row. I've also added 16 underglow LEDs (WS2812B-V5). The scan chain for the first 6 columns is shown below.
+
+<p align="center" width="100%">
+    <img src="assets/purple-owl-schematic.png">
+</p>
+
+
+Compared to the prototype, the design now has a clean board edge tightly fitting the switches, since the uC now goes underneath. The uC is socketed to the board with through-hole headers. Out of the 14 pins of the Seeed XIAO RP2040, 11 are connected.
 
 <p align="center" width="100%">
     <img src="assets/purple-owl-1p0-pcb.png">
@@ -149,6 +156,22 @@ The [build](firmware/v1.0/main.py) for the v1.0 PCB inherited the same layers. T
 <p align="center" width="100%">
     <img src="assets/photos/credits.jpg">
 </p>
+
+## Laser cut case
+
+For the case, I had envisioned a laser cut case with 1/8" acrylic layers. With the top layers as dark and the bottom layer as translucent to diffuse the underglow. This was the first time I used Fusion360 as well. Lots of firsts for me in this project. Thankfully, there are a ton of YouTube videos to learn from, and I only need the basics of sketching in 2D to set up the layers for the laser cut case.
+
+<p align="center" width="75%">
+    <img src="assets/laser-cut-case.png">
+</p>
+
+Using [plate.keeb.io](https://plate.keeb.io/) I obtained the cut outs for the switches and stabilizer to form the top switch plate. Then, I designed the middle layers to be spaced around the PCB by importing the PCB edge-cuts layer into the design and offset it. All the layers except for the top switch plate have cut outs for the Seeed XIAO RP2040 that is on the underside of the PCB. All the holes are cut out for M2 hardware. I also added holes for some feet that I found on [FlashQuark](https://flashquark.com/product/aluminum-keyboard-feet-set-of-2/). The links to the files for the laser cut case are below.
+
+- [top](case/top.dxf)
+- [middle](case/middle.dxf)
+- [bottom](case/bottom.dxf)
+
+I used p95 matte black acrylic sourced from a local [TAP plastics](https://www.tapplastics.com/plastics/custom-cut-to-size-plastic-sheets/acrylic-plexiglass-sheets) for the top three layers (1xtop, 2xmiddle), and a satinice acrylic for the bottom layer.
 
 ## Why
 I have a gorgeous looking ortho keycap set, MT3 Cyber lying around and it was a shame to not have adorned on a board. I also loved the feel of a shift and ctrl under my left thumb like my setup on the Iris v6, a split column-staggered layout. But, I missed my arrows keys and outer column symbols (which were on a layer). Once, I saw the Zlant - I simply knew I had to make the Purple Owl. Plus, it's been a over a year since I designed a PCB, or worked on a [hobby electronics project](https://github.com/SonalPinto/krz-arduboy2) and wanted to get into something before I forget how to DIY.
