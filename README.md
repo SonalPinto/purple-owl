@@ -146,17 +146,6 @@ The [setup](firmware/v0.1/main.py) for the prototype v0.1 diode matrix was fairl
 
 The [build](firmware/v1.0/main.py) for the v1.0 PCB inherited the same layers. The firmware switched the `scanner` to the `ShiftRegisterKeys()` and updated the `coord_mapping` to the physical layout of the scan chain. KMK offeres a neat `RGB` extension to support the underglow LEDs. The underglow RGB controls are added on a layer. Looking at the sheer simplicity of the [RGB extension](https://github.com/KMKfw/kmk_firmware/blob/master/kmk/extensions/rgb.py) I might consider writing a fancy underglow mode or two. Since, this was a *proper* build, the [`boot.py`](firmware/v1.0/boot.py) was updated with a "dev mode" which hides CircuitPython enumerations (serial, midi and storage) except for the USB HID keyboard.
 
-## Credits
-- Layout inspired by Ziptyze's [Zlant](https://1upkeyboards.com/shop/keyboard-kits/diy-40-kits/zlant-40-acrylic-keyboard-kit/) and [ZlantXL](https://1upkeyboards.com/shop/keyboard-kits/diy-40-kits/zlantxl-50-mechanical-keyboard-kit/).
-- Electronics inspired by Zhihui's [HanWen](https://github.com/peng-zhihui/HelloWord-Keyboard) and Tzarc's [Ghoul](https://github.com/tzarc/ghoul) which use shift registers to scan the matrix.
-- Dovenyi and [Keyboard Builder's Digest](https://kbd.news/).
-- Seeed DIY XIAO Mechanical Keyboard Contest, [Link](https://www.seeedstudio.com/seeed-fusion-diy-xiao-mechanical-keyboard-contest.html).
-- Photography by Wife 😘.
-
-<p align="center" width="100%">
-    <img src="assets/photos/credits.jpg">
-</p>
-
 ## Laser cut case
 
 For the case, I had envisioned a laser cut case with 1/8" acrylic layers. With the top layers as dark and the bottom layer as translucent to diffuse the underglow. This was the first time I used Fusion360 as well. Lots of firsts for me in this project. Thankfully, there are a ton of YouTube videos to learn from, and I only need the basics of sketching in 2D to set up the layers for the laser cut case.
@@ -173,5 +162,14 @@ Using [plate.keeb.io](https://plate.keeb.io/) I obtained the cut outs for the sw
 
 I used p95 matte black acrylic sourced from a local [TAP plastics](https://www.tapplastics.com/plastics/custom-cut-to-size-plastic-sheets/acrylic-plexiglass-sheets) for the top three layers (1xtop, 2xmiddle), and a satinice acrylic for the bottom layer.
 
-## Why
-I have a gorgeous looking ortho keycap set, MT3 Cyber lying around and it was a shame to not have adorned on a board. I also loved the feel of a shift and ctrl under my left thumb like my setup on the Iris v6, a split column-staggered layout. But, I missed my arrows keys and outer column symbols (which were on a layer). Once, I saw the Zlant - I simply knew I had to make the Purple Owl. Plus, it's been a over a year since I designed a PCB, or worked on a [hobby electronics project](https://github.com/SonalPinto/krz-arduboy2) and wanted to get into something before I forget how to DIY.
+## Credits
+- Layout inspired by Ziptyze's [Zlant](https://1upkeyboards.com/shop/keyboard-kits/diy-40-kits/zlant-40-acrylic-keyboard-kit/) and [ZlantXL](https://1upkeyboards.com/shop/keyboard-kits/diy-40-kits/zlantxl-50-mechanical-keyboard-kit/).
+- Electronics inspired by Zhihui's [HanWen](https://github.com/peng-zhihui/HelloWord-Keyboard) and Tzarc's [Ghoul](https://github.com/tzarc/ghoul) which use shift registers to scan the matrix.
+- Dovenyi and [Keyboard Builder's Digest](https://kbd.news/).
+- Seeed DIY XIAO Mechanical Keyboard Contest, [Link](https://www.seeedstudio.com/seeed-fusion-diy-xiao-mechanical-keyboard-contest.html).
+- Photography by Wife 😘.
+
+<p align="center" width="100%">
+    <img src="assets/photos/credits.jpg">
+</p>
+
