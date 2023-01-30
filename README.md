@@ -11,8 +11,8 @@ The Purple Owl is a uniform row staggered 60% keyboard designed around ortholine
 </p>
 
 ## News
-
-🎉 PurpleOwl wins 2nd place 🥈 in the [XIAO Mechanical Keyboard Contest](https://www.seeedstudio.com/seeed-fusion-diy-xiao-mechanical-keyboard-contest.html) 🎉
+- The prototype appeared on KBD.news! [Link](https://kbd.news/Purple-Owl-1581.html)
+- 🎉 PurpleOwl wins 2nd place 🥈 in the [XIAO Mechanical Keyboard Contest](https://www.seeedstudio.com/seeed-fusion-diy-xiao-mechanical-keyboard-contest.html) 🎉
 
 ## Layout
 The Purple Owl was inspired off the works of Ziptyze with their Zlant (4x12) and ZlantXL (5x12). It is almost like a staggered 5-row Preonic but with more columns a narrow bottom row to offer the visual aesthetic of four dominant rows like a Plank. Each row has a 0.25u stagger unlike a traditional row-stagger. There are 14 columns to accommodate the outer symbols (`-=[]\`). The right shift can be traded in for an arrow cluster. The ctrl, shift and other mods are designed to be under the thumbs with a symmetric bottom row that has a 2u surrounded by two 1u on each side. The board runs on [KMK](http://kmkfw.io/), so the keys can be freely mapped.
@@ -40,9 +40,6 @@ I came across an article for this [contest](https://www.seeedstudio.com/seeed-fu
 </p>
 
 The tiny size of the Seeed XIAO RP2040 will be perfect to highlight the GPIO-efficient scan-chain design. Aside from the 61 switches, the Seeed XIAO RP2040 will drive 16 underglow LEDs which will look stunning in a laser cut case.
-
-## News
-- The prototype appeared on KBD.news! [Link](https://kbd.news/Purple-Owl-1581.html)
 
 ## Gallery
 <p align="center" width="100%">
